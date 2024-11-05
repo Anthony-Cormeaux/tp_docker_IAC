@@ -7,10 +7,9 @@ terraform {
   }
 }
 
-provider "docker" {}
-# provider "docker" {
-#   host = "unix:///Users/username/.docker/run/docker.sock"
-# }
+provider "docker" {
+  host = "unix:///Users/anthonycormeaux/.orbstack/run/docker.sock"
+}
 
 
 # Create a Docker container
