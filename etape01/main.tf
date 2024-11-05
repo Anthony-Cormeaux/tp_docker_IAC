@@ -1,3 +1,5 @@
+#Création d'un container avec l'image nginx sur le port 80
+
 terraform {
   required_providers {
     docker = {
@@ -10,7 +12,6 @@ terraform {
 provider "docker" {
   host = "unix:///Users/anthonycormeaux/.orbstack/run/docker.sock"
 }
-
 
 # Create a Docker container
 resource "docker_container" "nginx" {

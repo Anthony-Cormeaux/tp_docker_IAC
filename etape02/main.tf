@@ -9,7 +9,7 @@ terraform {
 
 provider "docker" {}
 # provider "docker" {
-#   host = "unix:///Users/username/.docker/run/docker.sock"
+#   host = "unix:///Users/anthonycormeaux/.orbstack/run/docker.sock"
 # }
 
 resource "docker_network" "my_network" {
